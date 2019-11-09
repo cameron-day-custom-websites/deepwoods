@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deep Woods Fire Starters</title>
+        <meta name="description" content="Check out cool videos produced by Deep Woods." />
+        <meta name="author" content="Ben Woods - CDCW" />
+        <link rel="stylesheet" href="https://unpkg.com/picnic" />
+        <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css" />
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto 0 auto;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        hr {
+            width: 25%;
+        }
+        h1, h2, h3, h4, a {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        @media (orientation: portrait) {
+            video, iframe {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <body>
+        <nav>
+            <a href="#" class="brand">
+                <!--<img class="logo" />-->
+                <span style="font-family: 'Work Sans', sans-serif;">Deep Woods</span>
+            </a>
+            <input id="bmenub" type="checkbox" class="show">
+            <label for="bmenub" class="burger pseudo button"><i class="icono-hamburger" style="color: black;"></i></label>
+            <div class="menu">
+                <a href="index.html" class="pseudo button">Home</a>
+                <a href="https://www.facebook.com/Deep-Woods-Firestarters-102339501204536/" class="pseudo button">Facebook</a>
+                <a href="https://www.instagram.com/deepwoodsfirestarters/" class="pseudo button">Instagram</a>
+            </div>
+        </nav>
+        <header style="width: 100%; text-align: center; height: 35vh; width: 100vw; background-color: lightgray;">
+            <br />
+            <br />
+            <h2>Check out these videos produced by Deep Woods.</h2>
+            <a href="https://www.youtube.com/channel/UC3r1dYRnSHYGAG1YpH8or0Q" alt="yt"><i class="icono-youtube" style="color: red;"></i></a>
+        </header>
+        <main style="margin: 0 auto 0 auto; text-align: center;">
+            <br />
+            <br />
+            <h3>Firestarter Demo Video</h3>
+            <hr />
+            <br />
+            <video width="560" height="315" controls>
+                <source src="vid/demo.mp4" type="video/mp4" />
+            </video>
+            <br />
+            <br />
+            <br />
+            <h3>Youtube Videos</h3>
+            <hr />
+            <br />
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ba31xVR7hZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </main>
+    </body>
+</html>
