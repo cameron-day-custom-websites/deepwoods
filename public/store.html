@@ -29,42 +29,101 @@
                 height: 200px;
                 color: white;
             }
+            @media only screen and (orientation: portrait) {
+                #storeGrid {
+                    display: none;
+                }
+            }
+            @media only screen and (orientation: landscape) {
+                #storeGridMobile {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
         <div id="banner">
+            <br />
+            <br />
             <h1>Deep Woods Store</h1>
             <hr />
         </div>
-        <br />
-        <div class="flex three" style="padding-left: 10px; padding-right: 10px;">
-            <div>
-              <article class="card">
-                <img src="img/firestarter.jpg" alt="Basic Firestarter">
-                <footer>
-                  <h3>Basic Firestarter</h3>
-                  <p>Firestarter with a magnesium rod, flint, and striker.</p>
-                  <a href=https://checkout.square.site/pay/be65fe6efe6c4821a2e9acf8417297ed target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
-                </footer>
-              </article>
+        <nav>
+            <a href="#" class="brand">
+                <!--<img class="logo" />-->
+                <span style="font-family: 'Work Sans', sans-serif;">Deep Woods</span>
+            </a>
+            <input id="bmenub" type="checkbox" class="show">
+            <label for="bmenub" class="burger pseudo button"><i class="icono-hamburger" style="color: black;"></i></label>
+            <div class="menu">
+                <a href="index.html" class="pseudo button">Home</a>
+                <a href="videos.html" class="pseudo button">Videos</a>
+                <a href="https://www.facebook.com/Deep-Woods-Firestarters-102339501204536/" class="pseudo button">Facebook</a>
+                <a href="https://www.instagram.com/deepwoodsfirestarters/" class="pseudo button">Instagram</a>
             </div>
+        </nav>
+        <br />
+        <div id="storeGrid" class="flex three" style="padding-left: 10px; padding-right: 10px;">
             <div>
-              <article class="card">
-                <img src="img/firestarter.jpg" alt="Plus Firestarter">
-                <footer>
-                  <h3>Plus Firestarter</h3>
-                  <p>Basic Firestarter + Compass.</p>
-                  <a href=https://checkout.square.site/pay/f9f0a2539b2c44ba83f6b2f1160a9a7d target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
-                </footer>
-              </article>
+                <article class="card">
+                    <img src="img/basic.jpg" alt="Basic Firestarter">
+                    <footer>
+                        <h3>Glovebox Model</h3>
+                        <p>Firestarter with a magnesium rod, flint, and striker.</p>
+                        <a href=https://checkout.square.site/pay/be65fe6efe6c4821a2e9acf8417297ed target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
             </div>
             <div>
                 <article class="card">
-                    <img src="img/firestarter.jpg" alt="Deluxe Firestarer">
+                    <img src="img/delux.jpg" alt="Plus Firestarter">
                     <footer>
-                    <h3>Deluxe Firestarter</h3>
-                    <p>Plus Firestarter + Thermometer and SOS Mirror. </p>
-                    <a href=https://checkout.square.site/pay/29174c60ce494f1d87fab1faf25a01a4 target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;#000;border-radius:4px;>Buy now</a>
+                        <h3>Kayakers Model</h3>
+                        <p>Glovebox Model + Compass + Carabiner.</p>
+                        <a href=https://checkout.square.site/pay/f9f0a2539b2c44ba83f6b2f1160a9a7d target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/plus.jpg" alt="Deluxe Firestarer">
+                    <footer>
+                        <h3>Boy Scout/AT Model</h3>
+                        <p>Kayakers Model + Thermometer and SOS Mirror. </p>
+                        <a href=https://checkout.square.site/pay/29174c60ce494f1d87fab1faf25a01a4 target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;#000;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+        <!--Mobile Only Store Below-->
+        <div id="storeGridMobile" class="flex" style="padding-left: 10px; padding-right: 10px;">
+            <div>
+                <article class="card">
+                    <img src="img/basic.jpg" alt="Basic Firestarter">
+                    <footer>
+                        <h3>Glovebox Model</h3>
+                        <p>Firestarter with a magnesium rod, flint, and striker.</p>
+                        <a href=https://checkout.square.site/pay/be65fe6efe6c4821a2e9acf8417297ed target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/delux.jpg" alt="Plus Firestarter">
+                    <footer>
+                        <h3>Kayakers Model</h3>
+                        <p>Glovebox Model + Compass + Carabiner.</p>
+                        <a href=https://checkout.square.site/pay/f9f0a2539b2c44ba83f6b2f1160a9a7d target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/plus.jpg" alt="Deluxe Firestarer">
+                    <footer>
+                        <h3>Boy Scout/AT Model</h3>
+                        <p>Kayakers Model + Thermometer and SOS Mirror. </p>
+                        <a href=https://checkout.square.site/pay/29174c60ce494f1d87fab1faf25a01a4 target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;#000;border-radius:4px;>Buy now</a>
                     </footer>
                 </article>
             </div>
