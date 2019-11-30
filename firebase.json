@@ -1,6 +1,10 @@
 {
   "hosting": {
+    "cleanUrls": true,
     "public": "public",
+    "headers": [
+      { "source":"/store.html", "headers": [{"key": "Cache-Control", "value": "no-cache"}] }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
