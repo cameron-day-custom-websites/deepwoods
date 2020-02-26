@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+h1,h2,h3,h4 {
+    font-family: 'Work Sans', sans-serif;
+}
+hr {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+#banner {
+    background-image: url('img/xmasbackground.jpg') ;
+    color: white;
+}
+.disabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}
+@media only screen and (orientation: portrait) {
+    #storeGrid {
+        display: none;
+    }
+}
+@media only screen and (orientation: landscape) {
+    #storeGridMobile {
+        display: none;
+    }
+}

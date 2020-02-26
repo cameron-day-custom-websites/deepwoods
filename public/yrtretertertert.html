@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deep Woods Fire Starters</title>
+        <meta name="description" content="Enter the Vortex! 
+            Deep woods firestarters are the top firestarters in the United States of America. All firestarters are made in the USA!" />
+        <meta name="author" content="Ben Woods - CDCW" />
+        <link rel="stylesheet" href="https://unpkg.com/picnic" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans&display=swap" rel="stylesheet" />
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0 auto 0 auto;
+                scroll-behavior: smooth;
+                text-align: center;
+            }
+            h1,h2,h3,h4 {
+                font-family: 'Work Sans', sans-serif;
+            }
+            hr {
+                margin-left: 35%;
+                margin-right: 35%;
+            }
+            #banner {
+                background-image: url('img/xmasbackground.jpg') ;
+                color: white;
+            }
+            .disabled {
+                color: currentColor;
+                cursor: not-allowed;
+                opacity: 0.5;
+                text-decoration: none;
+                pointer-events: none;
+            }
+            @media only screen and (orientation: portrait) {
+                #storeGrid {
+                    display: none;
+                }
+            }
+            @media only screen and (orientation: landscape) {
+                #storeGridMobile {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <br />
+            <br />
+            <h1>Deep Woods Store</h1>
+            <h4><i>All products include shipping and handling</i></h4><!--sales 8.25% plus 7.95 shipping and handling  -->
+            <hr />
+            <br />
+        </div>
+        <nav>
+            <a href="#" class="brand">
+                <!--<img class="logo" />-->
+                <span style="font-family: 'Work Sans', sans-serif;">Deep Woods</span>
+            </a>
+            <input id="bmenub" type="checkbox" class="show">
+            <label for="bmenub" class="burger pseudo button"><i class="icono-hamburger" style="color: black;"></i></label>
+            <div class="menu">
+                <a href="index.html" class="pseudo button">Home</a>
+                <a href="videos.html" class="pseudo button">Videos</a>
+                <a href="https://www.facebook.com/Deep-Woods-Firestarters-102339501204536/" class="pseudo button">Facebook</a>
+                <a href="https://www.instagram.com/deepwoodsfirestarters/" class="pseudo button">Instagram</a>
+            </div>
+        </nav>
+        <br />
+        <div id="storeGrid" class="flex three" style="padding-left: 10px; padding-right: 10px;">
+            <div>
+                <article class="card">
+                    <img src="img/basic.jpg" alt="Basic Firestarter">
+                    <footer>
+                        <h3>Glovebox Model</h3>
+                        <p>Firestarter with a magnesium rod, flint, and striker.</p>
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbytTjl5UBww5eNwAJH9r2nNNg5jXJvqrbJfGKMRLA/exec">
+                            <input id="name" name="name" type="text" value=""
+                                required placeholder="Please enter your full name." />
+                            <br />
+                            <br />
+                            <input id="address" name="Address" type="text" value=""
+                                required placeholder="Please enter your full address."/>
+                            <br />
+                            <br />
+                            <input id="zip" name="Zip Code" type="text" value=""
+                                required placeholder="Please enter your zip code."/>
+                            <br />
+                            <br />
+                            <input id="address" name="email" type="email" value=""
+                                required placeholder="Please enter your email."/>
+                            <br />
+                            <br />
+                            <input id="phoneNumber" name="Phone #" type="tel" value=""
+                                required placeholder="Please enter your cellphone number. No - or () please." />
+                            <input id="model" name="Model" type="text" value="Glovebox" style="display: none;" />
+                            <input type="submit" onclick="
+                                let payButton = document.getElementById('a')
+                                payButton.classList.remove('disabled')"
+                            />                    
+                        </form>
+                        <br />
+                        <a class="disabled" id="a" href=https://checkout.square.site/pay/be65fe6efe6c4821a2e9acf8417297ed target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/delux.jpg" alt="Plus Firestarter">
+                    <footer>
+                        <h3>Kayakers Model</h3>
+                        <p>Glovebox Model + Compass + Carabiner.</p>
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbytTjl5UBww5eNwAJH9r2nNNg5jXJvqrbJfGKMRLA/exec">
+                            <input id="name" name="name" type="text" value=""
+                                required placeholder="Please enter your full name." />
+                            <br />
+                            <br />
+                            <input id="address" name="Address" type="text" value=""
+                                required placeholder="Please enter your full address."/>
+                            <br />
+                            <br />
+                            <input id="zip" name="Zip Code" type="text" value=""
+                                required placeholder="Please enter your zip code."/>
+                            <br />
+                            <br />
+                            <input id="address" name="email" type="email" value=""
+                                required placeholder="Please enter your email."/>
+                            <br />
+                            <br />
+                            <input id="phoneNumber" name="Phone #" type="tel" value=""
+                                required placeholder="Please enter your cellphone number. No - or () please." />
+                            <input id="model" name="Model" type="text" value="Kayakers" style="display: none;" />
+                            <input type="submit" onclick="
+                                let payButton = document.getElementById('b')
+                                payButton.classList.remove('disabled')" 
+                            />                    
+                        </form>
+                        <br />
+                        <a class="disabled" id="b" href=https://checkout.square.site/pay/f9f0a2539b2c44ba83f6b2f1160a9a7d target="_blank" style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/plus.jpg" alt="Deluxe Firestarer">
+                    <footer>
+                        <h3>Boy Scout/AT Model</h3>
+                        <p>Kayakers Model + Thermometer and SOS Mirror. </p>
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbytTjl5UBww5eNwAJH9r2nNNg5jXJvqrbJfGKMRLA/exec">
+                            <input id="name" name="name" type="text" value=""
+                                required placeholder="Please enter your full name." />
+                            <br />
+                            <br />
+                            <input id="address" name="Address" type="text" value=""
+                                required placeholder="Please enter your full address."/>
+                            <br />
+                            <br />
+                            <input id="zip" name="Zip Code" type="text" value=""
+                                required placeholder="Please enter your zip code."/>
+                            <br />
+                            <br />
+                            <input id="address" name="email" type="email" value=""
+                                required placeholder="Please enter your email."/>
+                            <br />
+                            <br />
+                            <input id="phoneNumber" name="Phone #" type="tel" value=""
+                                required placeholder="Please enter your cellphone number. No - or () please." />
+                            <input id="model" name="Model" type="text" value="Boy Scout/AT" style="display: none;" />
+                            <input type="submit" onclick="
+                                let payButton = document.getElementById('a')
+                                payButton.classList.remove('disabled')"
+                            />                    
+                        </form>
+                        <br />
+                        <a class="disabled" id="c" href=https://checkout.square.site/pay/29174c60ce494f1d87fab1faf25a01a4 target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;#000;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+        <!--Mobile Only Store Below-->
+        <div id="storeGridMobile" class="flex" style="padding-left: 10px; padding-right: 10px;">
+            <div>
+                <article class="card">
+                    <img src="img/basic.jpg" alt="Basic Firestarter">
+                    <footer>
+                        <h3>Glovebox Model</h3>
+                        <p>Firestarter with a magnesium rod, flint, and striker.</p>
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbytTjl5UBww5eNwAJH9r2nNNg5jXJvqrbJfGKMRLA/exec">
+                            <input id="name" name="name" type="text" value=""
+                                required placeholder="Please enter your full name." />
+                            <br />
+                            <br />
+                            <input id="address" name="Address" type="text" value=""
+                                required placeholder="Please enter your full address."/>
+                            <br />
+                            <br />
+                            <input id="zip" name="Zip Code" type="text" value=""
+                                required placeholder="Please enter your zip code."/>
+                            <br />
+                            <br />
+                            <input id="address" name="email" type="email" value=""
+                                required placeholder="Please enter your email."/>
+                            <br />
+                            <br />
+                            <input id="phoneNumber" name="Phone #" type="tel" value=""
+                                required placeholder="Please enter your cellphone number. No - or () please." />
+                            <input id="model" name="Model" type="text" value="Glovebox" style="display: none;" />
+                            <input type="submit" onclick="
+                                let payButton = document.getElementById('a')
+                                payButton.classList.remove('disabled')"
+                            />                    
+                        </form>
+                        <br />
+                        <a class="disabled" id="d" href=https://checkout.square.site/pay/be65fe6efe6c4821a2e9acf8417297ed target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/delux.jpg" alt="Plus Firestarter">
+                    <footer>
+                        <h3>Kayakers Model</h3>
+                        <p>Glovebox Model + Compass + Carabiner.</p>
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbytTjl5UBww5eNwAJH9r2nNNg5jXJvqrbJfGKMRLA/exec">
+                            <input id="name" name="name" type="text" value=""
+                                required placeholder="Please enter your full name." />
+                            <br />
+                            <br />
+                            <input id="address" name="Address" type="text" value=""
+                                required placeholder="Please enter your full address."/>
+                            <br />
+                            <br />
+                            <input id="zip" name="Zip Code" type="text" value=""
+                                required placeholder="Please enter your zip code."/>
+                            <br />
+                            <br />
+                            <input id="address" name="email" type="email" value=""
+                                required placeholder="Please enter your email."/>
+                            <br />
+                            <br />
+                            <input id="phoneNumber" name="Phone #" type="tel" value=""
+                                required placeholder="Please enter your cellphone number. No - or () please." />
+                            <input id="model" name="Model" type="text" value="Kayakers" style="display: none;" />
+                            <input type="submit" onclick="
+                                let payButton = document.getElementById('a')
+                                payButton.classList.remove('disabled')"
+                            />                    
+                        </form>
+                        <br />
+                        <a class="disabled" id="e" href=https://checkout.square.site/pay/f9f0a2539b2c44ba83f6b2f1160a9a7d target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <img src="img/plus.jpg" alt="Deluxe Firestarer">
+                    <footer>
+                        <h3>Boy Scout/AT Model</h3>
+                        <p>Kayakers Model + Thermometer and SOS Mirror.</p>
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbytTjl5UBww5eNwAJH9r2nNNg5jXJvqrbJfGKMRLA/exec">
+                            <input id="name" name="name" type="text" value=""
+                                required placeholder="Please enter your full name." />
+                            <br />
+                            <br />
+                            <input id="address" name="Address" type="text" value=""
+                                required placeholder="Please enter your full address."/>
+                            <br />
+                            <br />
+                            <input id="zip" name="Zip Code" type="text" value=""
+                                required placeholder="Please enter your zip code."/>
+                            <br />
+                            <br />
+                            <input id="address" name="email" type="email" value=""
+                                required placeholder="Please enter your email."/>
+                            <br />
+                            <br />
+                            <input id="phoneNumber" name="Phone #" type="tel" value=""
+                                required placeholder="Please enter your cellphone number. No - or () please." />
+                            <input id="model" name="Model" type="text" value="Boy Scout/At" style="display: none;" />
+                            <input type="submit" onclick="
+                                let payButton = document.getElementById('a')
+                                payButton.classList.remove('disabled')"
+                            />                    
+                        </form>
+                        <br />
+                        <a class="disabled" id="f" href=https://checkout.square.site/pay/29174c60ce494f1d87fab1faf25a01a4 target="_blank"style=display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:48px;height:48px;padding-left:48px;padding-right:48px;color:#fff;background-color:orange;#000;border-radius:4px;>Buy now</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+        <script data-cfasync="false" src="js/form-submission-handler.js"></script>
+    </body>
+</html>
