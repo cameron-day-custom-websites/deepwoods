@@ -21,15 +21,10 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-<<<<<<< HEAD
-=======
-    height: 70vh;
->>>>>>> c8566ef7e3b150109ab5c04285143a15b48a92fe
 }
 #contact {
     background-color: #D8D8D8;
 }
-<<<<<<< HEAD
 #pitch {
     font-size: 26px;
 }
@@ -38,11 +33,6 @@ p {
     text-align: center;
     height: auto;
     width: 100%;
-=======
-.c {
-    margin: auto;
-    text-align: center;
->>>>>>> c8566ef7e3b150109ab5c04285143a15b48a92fe
 }
 .cFull {
     margin: auto;
@@ -55,11 +45,8 @@ p {
 .webp #main {
     background-image: url('img/profile.webp');
 } 
-<<<<<<< HEAD
 @media screen and (orientation: portrait) {
     #pitch {
         font-size: 18px;
     }
 }
-=======
->>>>>>> c8566ef7e3b150109ab5c04285143a15b48a92fe
