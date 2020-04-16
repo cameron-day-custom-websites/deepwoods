@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,.custFont{
+    font-family: 'Work Sans', sans-serif;
+}
+hr {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+#main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#contact {
+    background-color: #D8D8D8;
+}
+#pitch {
+    font-size: 26px;
+}
+.c {
+    margin: auto;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+.cFull {
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+.no-webp #main {
+    background-image: url('img/profile.jpg');
+}
+.webp #main {
+    background-image: url('img/profile.webp');
+} 
+@media screen and (orientation: portrait) {
+    #pitch {
+        font-size: 18px;
+    }
+}
